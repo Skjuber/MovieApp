@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import InfiniteMoviesList from '../../app/InfiniteMoviesList';
+import InfiniteMoviesList from '../../utils/InfiniteMoviesList';
 import FavoriteMovieCard from './FavoriteMovieCard';
-import { RootState } from '../../app/store';
+import { RootState } from '../../utils/store';
 
 const FavoriteMovies = () => {
   const movieIds = useSelector((state: RootState) => state.favorites);

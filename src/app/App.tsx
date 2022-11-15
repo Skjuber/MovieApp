@@ -5,8 +5,8 @@ import {
   Redirect,
   Switch,
 } from 'react-router-dom';
-import MainMenu from './MainMenu';
-import SearchMovies from '../features/search-movies/SearchMovies';
+import MainMenu from './utils/MainMenu';
+import SearchMovies from './routes/search-movies/SearchMovies';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles } from '@material-ui/core/styles';
@@ -16,22 +16,22 @@ import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import LocalMoviesIcon from '@material-ui/icons/LocalMovies';
 import HomeIcon from '@material-ui/icons/Home';
 
-import LoadingIndicator from './LoadingIndicator';
+import LoadingIndicator from './utils/LoadingIndicator';
 import Typography from '@material-ui/core/Typography';
-import HomePage from './HomePage';
+import HomePage from './routes/HomePage';
 import './App.css';
 
 const PopularMovies = React.lazy(
-  () => import('../features/popular-movies/PopularMovies')
+  () => import('./routes/popular-movies/PopularMovies')
 );
 const SearchMoviesResult = React.lazy(
-  () => import('../features/search-movies/SearchMoviesResult')
+  () => import('./routes/search-movies/SearchMoviesResult')
 );
 const FavoriteMovies = React.lazy(
-  () => import('../features/favorites/FavoriteMovies')
+  () => import('./routes/my-list/FavoriteMovies')
 );
 const MovieDetails = React.lazy(
-  () => import('../features/movie-details/MovieDetails')
+  () => import('./routes/movie-details/MovieDetails')
 );
 
 const useStyles = makeStyles({

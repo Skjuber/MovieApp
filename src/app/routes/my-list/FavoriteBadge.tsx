@@ -7,8 +7,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import { useDispatch, useSelector } from 'react-redux';
 import { addMovie, removeMovie } from './favoritesSlice';
-import { MovieID } from '../../tmdb-api/types';
-import { RootState } from '../../app/store';
+import { MovieID } from '../../utils/tmdb-api/types';
+import { RootState } from '../../utils/store';
 
 const useStyles = makeStyles((theme) => ({
   root: {

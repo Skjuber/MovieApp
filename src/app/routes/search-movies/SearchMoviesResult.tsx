@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import InfiniteMoviesList from '../../app/InfiniteMoviesList';
-import { RootState } from '../../app/store';
+import InfiniteMoviesList from '../../utils/InfiniteMoviesList';
+import { RootState } from '../../utils/store';
 import { useInfiniteQuery } from 'react-query';
-import { searchMovies } from '../../tmdb-api/api';
-import { MovieListResultItem } from '../../tmdb-api/types';
-import MovieCard from '../../app/MovieCard';
+import { searchMovies } from '../../utils/tmdb-api/api';
+import { MovieListResultItem } from '../../utils/tmdb-api/types';
+import MovieCard from '../../utils/MovieCard';
 
 const SearchMoviesResult = () => {
   const query = useSelector((state: RootState) => state.searchMovies.query);

@@ -3,9 +3,9 @@ import { RouteComponentProps } from 'react-router-dom';
 import {
   getMoviePosterImageUrl,
   getMovieReleaseYear,
-} from '../../tmdb-api/api';
+} from '../../utils/tmdb-api/api';
 
-import FavoriteBadge from '../favorites/FavoriteBadge';
+import FavoriteBadge from '../my-list/FavoriteBadge';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -13,9 +13,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Rating from './Rating';
-import { MovieID } from '../../tmdb-api/types';
+import { MovieID } from '../../utils/tmdb-api/types';
 import Chip from '@material-ui/core/Chip';
-import useMovieDetails from '../../app/useMovieDetails';
+import useMovieDetails from '../../utils/useMovieDetails';
 
 const useStyles = makeStyles((theme) => ({
   card: {

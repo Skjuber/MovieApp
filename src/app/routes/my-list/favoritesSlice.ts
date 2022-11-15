@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { MovieID } from '../../tmdb-api/types';
+import { MovieID } from '../../utils/tmdb-api/types';
 
 export type FavoritesState = MovieID[];
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import InfiniteMoviesList from '../../app/InfiniteMoviesList';
+import InfiniteMoviesList from '../../utils/InfiniteMoviesList';
 import { useInfiniteQuery } from 'react-query';
-import { getPopularMovies } from '../../tmdb-api/api';
-import { MovieListResultItem } from '../../tmdb-api/types';
-import MovieCard from '../../app/MovieCard';
+import { getPopularMovies } from '../../utils/tmdb-api/api';
+import { MovieListResultItem } from '../../utils/tmdb-api/types';
+import MovieCard from '../../utils/MovieCard';
 
 const PopularMovies = () => {
   const {

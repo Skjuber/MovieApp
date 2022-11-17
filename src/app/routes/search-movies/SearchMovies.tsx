@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   input: {
     '& input': {
-      width: '100%',
+      width: '325px',
     },
   },
 }));

@@ -67,7 +67,7 @@ function App() {
                     iconComponent: HomeIcon,
                   },
                   {
-                    path: '/popular-movies',
+                    path: '/movies',
                     label: 'Movies',
                     iconComponent: LocalMoviesIcon,
                   },

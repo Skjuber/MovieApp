@@ -1,6 +1,6 @@
 ## Movie App
 
-For practice, I created a relatively complex application that allows users to view recently released movies. One of my objectives was to learn React Query, which was successfully accomplished. Additionally, I drew inspiration for specific coding sections from various YouTube channels, such as CodeEvolution, Web Dev Simplified, FireShip and some of now defunct Youtube channels and websites.
+For practice, I created a relatively complex application that allows users to view recently released movies. One of my objectives was to master React Query and React Redux which was successfully accomplished.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
